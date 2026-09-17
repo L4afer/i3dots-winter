@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-betterlockscreen -l dimblur
+betterlockscreen -l dimblur --show-layout
