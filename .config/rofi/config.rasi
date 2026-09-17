@@ -8,7 +8,7 @@
     surface2: rgba(88, 91, 112, 1);
     overlay0: rgba(108, 112, 134, 1);
     overlay1: rgba(127, 132, 156, 1);
-    text:     rgb(244, 203, 176);
+    text:     rgb(177, 201, 220);
     subtext0: rgba(166, 173, 200, 1);
     lavender: rgba(180, 190, 254, 1);
     blue:     rgba(137, 180, 250, 1);
@@ -24,8 +24,8 @@
     pink:     rgba(245, 194, 231, 1);
     flamingo: rgba(242, 205, 205, 1);
     rosewater:rgba(245, 224, 220, 1);
-    borderc : rgb(177, 201, 220);
-
+    borderc: rgb(177, 201, 220);
+    mode: rgb(177, 201, 220);
     /* Rofi colour vars */
     background-color: transparent;
     border-color:     @mauve;
@@ -63,14 +63,14 @@ inputbar {
 
 prompt {
     background-color: transparent;
-    text-color:       @mantle;
+    text-color:       @mode;
     padding:          2px 0;
 }
 
 entry {
     background-color: transparent;
     text-color:       @text;
-    placeholder:      "Search apps…";
+    placeholder:      "Search ";
     placeholder-color: @overlay0;
     cursor:           text;
     padding:          2px 0;
