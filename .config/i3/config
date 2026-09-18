@@ -22,7 +22,6 @@ bindsym $mod+Q exec kitty #terminal
 bindsym $mod+Shift+G exec ~/Downloads/i3dots-green/cp.sh
 bindsym $mod+Shift+A exec ~/Downloads/i3dots-autumn/cp.sh
 bindsym $mod+Shift+W exec ~/Downloads/i3dots-winter/cp.sh
-bindsym $mod+shift+S exec ~/Downloads/i3dots-spiderman/cp.sh
 bindsym $mod+Escape exec ~/.config/i3/lock.sh
 bindsym Mod1+Return exec ~/.config/i3/scrot.sh
 bindsym Print exec ~/.config/i3/scrot1.sh
