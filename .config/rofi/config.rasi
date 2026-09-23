@@ -1,0 +1,142 @@
+/* ── Palette ─────────────────────────────────────────────────────────── */
+* {
+    base:     rgba(23, 34, 38, 0.25);
+    mantle:   rgba(23, 33, 38, 0.25);
+    crust:    rgba(17, 17, 27, 1);
+    surface0: rgb(76, 105, 128);
+    surface1: rgba(204, 85, 0, 1);
+    surface2: rgba(88, 91, 112, 1);
+    overlay0: rgba(108, 112, 134, 1);
+    overlay1: rgba(127, 132, 156, 1);
+    text:     rgb(177, 201, 220);
+    subtext0: rgba(166, 173, 200, 1);
+    lavender: rgba(180, 190, 254, 1);
+    blue:     rgba(137, 180, 250, 1);
+    sapphire: rgba(116, 199, 236, 1);
+    sky:      rgba(137, 220, 235, 1);
+    teal:     rgba(148, 226, 213, 1);
+    green:    rgba(255, 130, 67, 1);
+    yellow:   rgba(249, 226, 175, 1);
+    peach:    rgba(250, 179, 135, 1);
+    maroon:   rgba(235, 160, 172, 1);
+    red:      rgba(243, 139, 168, 1);
+    mauve:    rgba(16, 51, 12, 0.5);
+    pink:     rgba(245, 194, 231, 1);
+    flamingo: rgba(242, 205, 205, 1);
+    rosewater:rgba(245, 224, 220, 1);
+    borderc: rgb(177, 201, 220);
+    mode: rgb(177, 201, 220);
+    /* Rofi colour vars */
+    background-color: transparent;
+    border-color:     @mauve;
+    text-color:       @text;
+    font:             "Departure Mono Nerd Font 15";
+}
+
+/* ── Window ──────────────────────────────────────────────────────────── */
+window {
+    background-color: @base;
+    //border-radius:    20px;
+    border: 3px;
+    border-color: @borderc; 
+    padding:          0;
+    width:            520px;
+}
+
+/* ── Main box ────────────────────────────────────────────────────────── */
+mainbox {
+    background-color: transparent;
+    spacing:          0;
+    children:         [ inputbar, listview ];
+    padding:          12px;
+}
+
+/* ── Input bar ───────────────────────────────────────────────────────── */
+inputbar {
+    background-color: @mantle;
+    border-radius:    8px;
+    padding:          8px 12px;
+    margin:           0 0 10px 0;
+    children:         [ prompt, entry ];
+    spacing:          6px;
+}
+
+prompt {
+    background-color: transparent;
+    text-color:       @mode;
+    padding:          2px 0;
+}
+
+entry {
+    background-color: transparent;
+    text-color:       @text;
+    placeholder:      "Search ";
+    placeholder-color: @overlay0;
+    cursor:           text;
+    padding:          2px 0;
+}
+
+/* ── List view ───────────────────────────────────────────────────────── */
+listview {
+    background-color: transparent;
+    columns:          1;
+    lines:            6;
+    scrollbar:        false;
+    spacing:          4px;
+    fixed-height:     true;
+}
+
+/* ── Elements ────────────────────────────────────────────────────────── */
+element {
+    background-color: transparent;
+    border-radius:    6px;
+    padding:          8px 10px;
+    spacing:          10px;
+    orientation:      horizontal;
+    children:         [ element-icon, element-text ];
+}
+
+element-icon {
+    size:             24px;
+    background-color: transparent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       @subtext0;
+    vertical-align:   0.5;
+}
+/* normal */
+element.normal.normal  { background-color: transparent; }
+element.normal.urgent  { background-color: transparent; text-color: @red;   }
+element.normal.active  { background-color: transparent; text-color: @green; }
+
+/* selected */
+element.selected.normal {
+    background-color: @surface0;
+    text-color:       @text;
+}
+element.selected.urgent {
+    background-color: @red;
+    text-color:       @base;
+}
+element.selected.active {
+    background-color: rgba(255, 255, 255, 1);
+    text-color:       @base;
+}
+
+
+element.alternate.normal { background-color: transparent; }
+
+/* ── Message / error ─────────────────────────────────────────────────── */
+message {
+    background-color: @surface0;
+    border-radius:    6px;
+    padding:          6px 10px;
+    margin:           10px 0 0 0;
+}
+
+textbox {
+    background-color: transparent;
+    text-color:       @yellow;
+}

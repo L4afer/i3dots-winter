@@ -1,0 +1,44 @@
+# --- background { } ---
+blur_level=
+
+# brightness = 0.5 (dimmed) -> dim 0-100, higher = darker
+dim_level=40
+
+# --- fonts ---
+font="Departure Mono Nerd Font"
+
+# --- input-field { } ---
+# outer_color = rgb(151515)
+ring_color="00000000"
+ringvercolor="73a2c7"
+ringwrongcolor="73a2c7"
+
+insidecolor="00000000"
+insidevercolor="00000000"
+insidewrongcolor="00000000"
+
+text_color="e2f2ff"
+
+key_hl_color="b78a67"
+bshl_color="b78a67"
+separator_color="00000000"
+
+login_text="psswd"
+verif_text="pending"
+wrong_text="no."
+
+# --- label { text = %H:%M } ---
+time_format="%H:%M:%S"
+time_font_size=72
+
+# --- label { text = %A, %B %d } ---
+date_format="%A, %B %d"
+date_font_size=24
+
+login_font_size=24
+verif_font_size=24
+wrong_font_size=24
+
+# --- misc ---
+greeter_text="Welcome to euphoria"
+show_failed_attempts=true
