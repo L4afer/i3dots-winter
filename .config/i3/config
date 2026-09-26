@@ -29,8 +29,8 @@ bindsym $mod+Shift+q kill
 bindsym $mod+D exec rofi -show drun #app launcher
 bindsym $mod+E exec nautilus
 bindsym $mod+space exec ~/.config/i3/kblayout.sh
-bindsym $mod+j exec sudo modprobe -r psmouse #Mouse fix
-bindsym $mod+k exec sudo modprobe psmouse #Mouse fix
+bindsym $mod+j exec ~/.config/i3/mouser1.sh
+bindsym $mod+k exec ~/.config/i3/mouser2.sh
 bindsym $mod+f fullscreen
 
 bindsym $mod+Left focus left
