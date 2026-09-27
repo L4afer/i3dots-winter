@@ -22,7 +22,6 @@ rm -rf ~/.config/i3/
 cp -r ~/Downloads/i3dots-winter/.config/i3 ~/.config/
 i3 reload 
 ~/.config/i3/polr.sh
-betterlockscreen -u ~/.config/i3/WinterBlue768p.png
 sudo chmod +x ~/.config/i3/scrot.sh
 sudo chmod +X ~/.config/i3/scrot1.sh
 sudo chmod +x ~/.config/i3/kblayout.sh

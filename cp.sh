@@ -10,5 +10,3 @@ rm -rf ~/.config/i3
 cp -r ~/Downloads/i3dots-winter/.config/i3 ~/.config/
 i3 reload
 ~/.config/i3/polr.sh
-betterlockscreen -u ~/.config/i3/WinterBlue768p.png
-
