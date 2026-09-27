@@ -1,6 +1,6 @@
 
 #Downloads all of the needed shit
-sudo dnf install --skip-unavailable polybar i3 kitty nvim neofetch rofi xclip scrot feh picom betterlockscreen
+sudo dnf install --skip-unavailable polybar i3 kitty nvim neofetch rofi xclip scrot feh picom xsecurelock mpv
 
 #Stuff for the terminal
 sudo dnf install zsh

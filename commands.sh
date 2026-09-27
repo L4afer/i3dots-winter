@@ -1,6 +1,6 @@
 
 #Downloads all of the needed shit
-sudo pacman -S polybar i3 kitty nvim neofetch rofi xclip scrot feh picom betterlockscreen
+yay -S polybar i3 kitty nvim neofetch rofi xclip scrot feh picom xsecurelock mpv
 
 #Stuff for the terminal
 sudo pacman -S zsh

@@ -1,6 +1,6 @@
 
 #Downloads all of the needed shit
-sudo apt-get install polybar i3 kitty nvim neofetch rofi xclip scrot feh picom betterlockscreen
+sudo apt-get install polybar i3 kitty nvim neofetch rofi xclip scrot feh picom xsecurelock mpv
 
 #Stuff for the terminal
 sudo apt-get install zsh
