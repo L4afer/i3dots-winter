@@ -1,6 +1,9 @@
 set $mod Mod4
 font pango:Departure Mono Nerd Font 11
 
+#Monitor setup
+exec --no-startup-id xrandr --output eDP-1 --mode 1280x720
+
 exec --no-startup-id xset -dpms
 exec --no-startup-id xset s 7200 #set timer for 2 hrs
 exec --no-startup-id dex --autostart --environment i3
